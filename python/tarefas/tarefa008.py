@@ -14,7 +14,9 @@ texcedente = 0
 qtdmin = 0
 qtdacima = 0
 
-for i in range(nf):
+i = 0  # contador
+
+while i < nf:
     print(f"Funcionário {i+1}")
 
     while True:
@@ -64,6 +66,8 @@ for i in range(nf):
     print(f"Salário base: R$ {sbase:.2f}")
     print(f"Acréscimo: R$ {acrescimo:.2f}")
     print(f"Salário total: R$ {stotal:.2f}")
+
+    i += 1  # incrementa o contador (ESSENCIAL)
 
 percmin = (qtdmin / nf) * 100
 percacima = (qtdacima / nf) * 100
