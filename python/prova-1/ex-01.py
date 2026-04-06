@@ -10,13 +10,13 @@ percp = 0
 idademax = -1000
 idademin = 1000
 somaidade = 0
-continuar = "S"
-while continuar == "S" or continuar == "s":
+while True:
     try: 
         idade = int(input("Digite a idade: "))
         peso = float(input("Digite o peso: "))
         altura = float(input("Digite a altura: "))
         imc = peso / (altura ** 2)
+        print(f"O Resultado do seu IMC é {imc:.2f}")
         espmed = ""
         while espmed != 1 and espmed != 2 and espmed != 3 and espmed != 4:
             espmed = int(input("Digite a especialidade medica (1- Cardiologia, 2- Neurologia, 3- Traumatologia, 4- Pediatria): "))
@@ -46,12 +46,16 @@ while continuar == "S" or continuar == "s":
             idademax = idade
         if idade < idademin:
             idademin = idade
+        continuar = ""
         while continuar != "N" and continuar != "n" and continuar != "S" and continuar != "s":
             continuar = input("Deseja inserir mais um paciente ? (S/N): ")
             print("-------------------------------------------------------")
             if continuar != "N" and continuar != "n" and continuar != "S" and continuar != "s":
                 print("Por favor, digite S ou N")
                 print("Vamos tentar novamente ")
+        if continuar == "N" or continuar == "n":
+            print("Encerrando...")
+            break
     except:
         print("Por favor, digite apenas numeros")
         print("Vamos tentar novamente ")
