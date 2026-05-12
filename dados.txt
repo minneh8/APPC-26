@@ -1,0 +1,20 @@
+Nome: Lucas
+Idade: 18
+Celular: 1999299232
+Email:lucas@gmai.com
+ 
+Nome: Zago
+Idade: 19
+Celular: 19929938123
+Email:zago@gmail.com
+ 
+Nome: guibus
+Idade: 22
+Celular: 10298378291
+Email:guibus@gmail.com
+ 
+Nome: Adamastor
+Idade: 23
+Celular: 10298378291
+Email:adamastor@gmail.com
+ 
